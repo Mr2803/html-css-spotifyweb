@@ -13,10 +13,9 @@
 
 
 .global{
-  min-height: 100vh;
+  min-height: calc(100vh - 100px);
   max-width: 100%;
   display:flex;
-  background:lightblue;
   flex-direction: row;
 }
 
@@ -50,12 +49,15 @@ p{
   margin-left:12%;
 }
 
+.top-nav-orizzontale{
+  padding:50px;
+}
+
 .top-nav-orizzontale ul{
  list-style-type:none;
 }
 .top-nav-orizzontale ul li{
   display:inline-block;
-
 }
 
 .top-nav-orizzontale ul li a{
@@ -71,11 +73,30 @@ p{
 }
 
 
-
 .blocco-song{
+  width: 100%;
   display:flex;
-  justify-content: center;
+  justify-content: space-between;
   border: 1px solid black;
+  flex-direction: column;
+}
+
+.title{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img{
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-item-img{
+  width: 200px;
+  height: 200px;
+  background-image: url(../img/queen.jpg);
+  background-size: cover;
 }
 
 .player{
