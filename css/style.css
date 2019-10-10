@@ -1,3 +1,5 @@
+/* NOTE: regole generali */
+
 *{
   margin:0;
   padding:0;
@@ -28,6 +30,9 @@ html {
   /* margin-bottom: 100px; */
   overflow-y: scroll;
 }
+/* /NOTE: regole generali */
+
+ /* NOTE: navbar-laterale */
 
 .logo img{
   filter:invert(1);
@@ -77,6 +82,10 @@ p{
   margin-left:12%;
 }
 
+ /* /NOTE: navbar-laterale */
+
+ /* NOTE: navbar superiore  */
+
 .top-nav-orizzontale{
   padding:50px;
 }
@@ -103,8 +112,9 @@ p{
 .top-nav-orizzontale ul li a:hover{
   opacity:1;
 }
+ /* /NOTE: navbar superiore  */
 
-
+  /* NOTE: blocco canzoni  */
 .blocco-song{
   width: 100%;
   display:flex;
@@ -191,6 +201,9 @@ p{
   background: rgba(24, 27, 25, 0.46) ;
   transition:2s ;
 }
+/* /NOTE: blocco canzoni  */
+
+/* NOTE: player */
 
 .player{
   display:flex;
@@ -200,6 +213,9 @@ p{
   position:fixed;
   bottom:0;
 }
+/* /NOTE: player */
+
+/* NOTE: mediaquery */
 
 @media screen and (max-width: 1199px) {
   .img .flex-item-img:nth-child(5){
