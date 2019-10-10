@@ -205,6 +205,18 @@ p{
   bottom:0;
 }
 
+.player{
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.player-first{
+  display:flex;
+  width: 60%;
+  flex-direction: column;
+}
+
 #bars {
     height: 30px;
     left: 50%;
