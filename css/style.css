@@ -81,7 +81,7 @@ p{
   width: 100%;
   display:flex;
   justify-content: space-between;
-  
+
   flex-direction: column;
   padding: 50px;
 }
@@ -124,6 +124,17 @@ p{
   background-image: url(../img/queen.jpg);
   background-size: cover;
   background-position: center;
+}
+
+.overlay{
+  width: 100%;
+  height: 100%;
+  display:none;
+}
+
+.flex-item-img:hover .overlay{
+  display:inline-block;
+  background: rgba(37, 41, 39, 0.71) ;
 }
 
 .player{
