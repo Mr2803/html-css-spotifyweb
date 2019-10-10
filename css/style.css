@@ -69,7 +69,6 @@ p{
 }
 
 .global-song{
-
   width: 88%;
   display: flex;
   flex-direction: column;
@@ -110,7 +109,6 @@ p{
   width: 100%;
   display:flex;
   justify-content: space-between;
-
   flex-direction: column;
   padding: 50px;
 }
@@ -212,6 +210,24 @@ p{
     width: calc((100% / 4) - 40px);
   }
 
+  .title a:first-child{
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+
+}
+@media screen and (max-width: 900px) {
+  .flex-item-img{
+    width: calc((100% / 2) - 40px);
+    margin-bottom: 20px;
+  }
+
+  .title a:first-child{
+    font-size: 35px;
+    font-weight: bold;
+  }
+
 
 }
 
@@ -222,6 +238,11 @@ p{
 
   .flex-item-img{
     width: calc((100% / 3) - 40px);
+  }
+
+  .title a:first-child{
+    font-size: 25px;
+    font-weight: bold;
   }
 
 
