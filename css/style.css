@@ -3,3 +3,54 @@
   padding:0;
   box-sizing: border-box;
 }
+
+
+.global{
+  min-height: 100vh;
+  max-width: 100%;
+  display:flex;
+  background:lightblue;
+  flex-direction: row;
+}
+
+
+p{
+  color:white;
+}
+
+
+.nav-laterale{
+  min-height: calc(100% - 100px);
+  width:12%;
+  background:black;
+  display:flex;
+  flex-direction: column;
+  position:fixed;
+  top:0;
+}
+
+.global-song{
+  background: lightgreen;
+  width: 88%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left:12%;
+}
+
+
+.blocco-song{
+  display:flex;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.player{
+  display:flex;
+  background:red;
+  width: 100%;
+  height: 100px;
+  position:fixed;
+  bottom:0;
+}
