@@ -124,6 +124,20 @@ p{
   background-image: url(../img/queen.jpg);
   background-size: cover;
   background-position: center;
+  transition: background 2s;
+}
+
+.img .flex-item-img:nth-child(2){
+  background-image: url(../img/skillet.jpg)
+}
+.img .flex-item-img:nth-child(3){
+  background-image: url(../img/gianna-nannini.jpg)
+}
+.img .flex-item-img:nth-child(4){
+  background-image: url(../img/rappa-ternt-sanga-508a96ed2b83d.jpg)
+}
+.img .flex-item-img:nth-child(5){
+  background-image: url(../img/wp2646843.jpg)
 }
 
 .overlay{
@@ -131,6 +145,7 @@ p{
   height: 100%;
   display:none;
   position:relative;
+  transition:2s ;
 }
 
 .overlay i{
@@ -142,9 +157,11 @@ p{
   transform: translate(-50%,-50%)
 }
 
+
 .flex-item-img:hover .overlay{
   display:inline-block;
-  background: rgba(37, 41, 39, 0.71) ;
+  background: rgba(24, 27, 25, 0.46) ;
+  transition:2s ;
 }
 
 .player{
