@@ -23,6 +23,11 @@
   flex-direction: row;
 }
 
+.logo img{
+  filter:invert(1);
+  width:80%;
+}
+
 
 p{
   color:white;
@@ -35,8 +40,25 @@ p{
   background-image: linear-gradient(to right bottom, rgb(67, 66, 87), rgb(0, 0, 0)), linear-gradient(transparent, rgb(0, 0, 0) 50%);
   display:flex;
   flex-direction: column;
+  justify-content: flex-start;
   position:fixed;
   top:0;
+  padding:0 24px;
+}
+
+.menu{
+  height: 80%;
+}
+
+.menu ul{
+  list-style-type: none;
+
+}
+
+.menu ul li{
+  color:white;
+  font-weight: bold;
+
 }
 
 .global-song{
