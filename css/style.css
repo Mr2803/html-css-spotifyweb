@@ -2,7 +2,14 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
+  font-family: "spotify-circular";
 }
+
+@font-face {
+  font-family: 'spotify-circular';
+    src: url('https://open.scdn.co/fonts/CircularSpUIv3T-Light.woff2') format('woff2'), url('https://open.scdn.co/fonts/CircularSpUIv3T-Light.woff') format('woff'),
+    url('https://open.scdn.co/fonts/CircularSpUIv3T-Light.ttf') format('truetype');
+    }
 
 
 .global{
@@ -29,16 +36,40 @@ p{
   top:0;
 }
 
+/* .menu{
+  overflow: scroll;
+} */
+
 .global-song{
-  background: lightgreen;
+  background-image: linear-gradient(to right bottom, rgb(67, 66, 87), rgb(0, 0, 0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
   width: 88%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   margin-left:12%;
+}
+
+.top-nav-orizzontale ul{
+ list-style-type:none;
+}
+.top-nav-orizzontale ul li{
+  display:inline-block;
 
 }
+
+.top-nav-orizzontale ul li a{
+  text-decoration: none;
+  opacity: .7;
+  color:white;
+  padding-right: 20px;
+  font-weight: bold;
+}
+
+.top-nav-orizzontale ul li a:hover{
+  opacity:1;
+}
+
 
 
 .blocco-song{
