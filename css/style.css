@@ -22,7 +22,7 @@ html {
 }
 
 .global{
-  background-image: linear-gradient(to right bottom, rgb(67, 66, 87), rgb(0, 0, 0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
+  background-image: linear-gradient(to right bottom, rgb(18, 87, 49), rgb(0, 0, 0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
   height: calc(100vh - 100px);
   max-width: 100%;
   display:flex;
@@ -46,7 +46,7 @@ p{
 .nav-laterale{
   height: calc(100vh - 100px);
   width:12%;
-  background-image: linear-gradient(to right bottom, rgb(67, 66, 87), rgb(0, 0, 0)), linear-gradient(transparent, rgb(0, 0, 0) 50%);
+  background-color: rgba(0,0,0,.8);
   display:flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -61,11 +61,37 @@ p{
 
 .menu ul{
   list-style-type: none;
+  margin-top: 20px;
 }
 
 .menu ul li{
   color:white;
   font-weight: bold;
+  margin-bottom: 20px;
+  position:relative;
+  margin-left: 30px;
+  padding-top: 10px;
+}
+
+.menu ul li::before{
+  content:"";
+  width: 30px;
+  height: 30px;
+  background:url(../img/svg3.svg);
+  display:inline-block;
+  color:white;
+  margin-right: 20px;
+  position:absolute;
+  left:-40px;
+  top:2px;
+}
+
+.menu ul li:nth-child(2)::before{
+  background: url(../img/svg4.svg)
+}
+.menu ul li:nth-child(3)::before{
+  background: url(../img/svg6.svg);
+  filter:background grey;
 }
 
 .install-app{
@@ -207,23 +233,45 @@ p{
 
 .player{
   display:flex;
-  justify-content: flex-end;
   align-items: center;
+  justify-content: flex-end;
+  flex-direction: row;
 }
 
 .player-first{
   display:flex;
-  width: 60%;
+  width: 50%;
   flex-direction: column;
+}
+
+.player-first ul{
+ list-style-type: none;
+}
+
+.player-first ul li{
+  display:inline-block;
+  font-size: 20px;
+}
+
+.player-first ul li i{
+  color:grey;
+  margin-right: 25px;
+}
+.player-first ul li i:hover{
+  color:white;
+}
+
+.player-first ul li:nth-child(3) i{
+  border:1px solid grey;
+  border-radius: 50%;
+  padding: 10px;
 }
 
 #bars {
     height: 30px;
-    left: 50%;
-    margin: -30px 0 0 -20px;
-    position: absolute;
-    top: 50%;
-    width: 40px;
+    width: 240px;
+    position:relative;
+    border-bottom: 1px solid grey;
 }
 
 .bar {
@@ -231,7 +279,7 @@ p{
     bottom: 1px;
     height: 3px;
     position: absolute;
-    width: 3px;
+    width: 5px;
     animation: sound 0ms -800ms linear infinite alternate;
 }
 
@@ -247,15 +295,57 @@ p{
 }
 
 .bar:nth-child(1)  { left: 1px; animation-duration: 474ms; }
-.bar:nth-child(2)  { left: 5px; animation-duration: 433ms; }
-.bar:nth-child(3)  { left: 9px; animation-duration: 407ms; }
-.bar:nth-child(4)  { left: 13px; animation-duration: 458ms; }
-.bar:nth-child(5)  { left: 17px; animation-duration: 400ms; }
-.bar:nth-child(6)  { left: 21px; animation-duration: 427ms; }
-.bar:nth-child(7)  { left: 25px; animation-duration: 441ms; }
-.bar:nth-child(8)  { left: 29px; animation-duration: 419ms; }
-.bar:nth-child(9)  { left: 33px; animation-duration: 487ms; }
-.bar:nth-child(10) { left: 37px; animation-duration: 442ms; }​
+.bar:nth-child(2)  { left: 7px; animation-duration: 433ms; }
+.bar:nth-child(3)  { left: 13px; animation-duration: 407ms; }
+.bar:nth-child(4)  { left: 19px; animation-duration: 458ms; }
+.bar:nth-child(5)  { left: 23px; animation-duration: 400ms; }
+.bar:nth-child(6)  { left: 29px; animation-duration: 427ms; }
+.bar:nth-child(7)  { left: 35px; animation-duration: 441ms; }
+.bar:nth-child(8)  { left: 41px; animation-duration: 419ms; }
+.bar:nth-child(9)  { left: 47px; animation-duration: 487ms; }
+.bar:nth-child(10) { left: 53px; animation-duration: 442ms; }​
+.bar:nth-child(11)  { left: 59px; animation-duration: 474ms; }
+.bar:nth-child(12)  { left: 65px; animation-duration: 433ms; }
+.bar:nth-child(13)  { left: 71px; animation-duration: 407ms; }
+.bar:nth-child(14)  { left: 77px; animation-duration: 458ms; }
+.bar:nth-child(15)  { left: 83px; animation-duration: 400ms; }
+.bar:nth-child(16)  { left: 89px; animation-duration: 427ms; }
+.bar:nth-child(17)  { left: 95px; animation-duration: 441ms; }
+.bar:nth-child(18)  { left: 101px; animation-duration: 419ms; }
+.bar:nth-child(19)  { left: 107px; animation-duration: 487ms; }
+.bar:nth-child(20) { left: 113px; animation-duration: 442ms; }​
+.bar:nth-child(21)  { left: 119px; animation-duration: 474ms; }
+.bar:nth-child(22)  { left: 125px; animation-duration: 433ms; }
+.bar:nth-child(23)  { left: 131px; animation-duration: 407ms; }
+.bar:nth-child(24)  { left: 137px; animation-duration: 458ms; }
+.bar:nth-child(25)  { left: 143px; animation-duration: 400ms; }
+.bar:nth-child(26)  { left: 149px; animation-duration: 427ms; }
+.bar:nth-child(27)  { left: 155px; animation-duration: 441ms; }
+.bar:nth-child(28)  { left: 161px; animation-duration: 419ms; }
+.bar:nth-child(29)  { left: 167px; animation-duration: 487ms; }
+.bar:nth-child(30) { left: 173px; animation-duration: 442ms; }​
+.bar:nth-child(31)  { left: 179px; animation-duration: 474ms; }
+.bar:nth-child(32)  { left: 185px; animation-duration: 433ms; }
+.bar:nth-child(33)  { left: 191px; animation-duration: 407ms; }
+.bar:nth-child(34)  { left: 197px; animation-duration: 458ms; }
+.bar:nth-child(35)  { left: 203px; animation-duration: 400ms; }
+.bar:nth-child(36)  { left: 209px; animation-duration: 427ms; }
+.bar:nth-child(37)  { left: 215px; animation-duration: 441ms; }
+.bar:nth-child(38)  { left: 221px; animation-duration: 419ms; }
+.bar:nth-child(39)  { left: 227px; animation-duration: 487ms; }
+.bar:nth-child(40) { left: 233px; animation-duration: 442ms; }​
+
+
+.player-second{
+  width:40%;
+
+}
+
+.player-second ul li{
+  list-style-type: none;
+  display:inline-block;
+}
+
 /* /NOTE: player */
 
 /* NOTE: mediaquery */
