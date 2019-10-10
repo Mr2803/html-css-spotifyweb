@@ -5,6 +5,10 @@
   font-family: "spotify-circular";
 }
 
+.debug{
+  border:1px solid white;
+}
+
 @font-face {
   font-family: 'spotify-circular';
     src: url('https://open.scdn.co/fonts/CircularSpUIv3T-Light.woff2') format('woff2'), url('https://open.scdn.co/fonts/CircularSpUIv3T-Light.woff') format('woff'),
@@ -77,8 +81,9 @@ p{
   width: 100%;
   display:flex;
   justify-content: space-between;
-  border: 1px solid black;
+  
   flex-direction: column;
+  padding: 50px;
 }
 
 .title{
@@ -87,9 +92,30 @@ p{
   align-items: center;
 }
 
+
+.title a{
+  text-decoration: none;
+  color:white;
+  font-weight: bold;
+}
+
+.title a:first-child{
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.title a:last-child{
+  opacity:.7;
+}
+
+.title a:last-child:hover{
+  opacity:1;
+}
+
+
 .img{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .flex-item-img{
@@ -97,6 +123,7 @@ p{
   height: 200px;
   background-image: url(../img/queen.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 .player{
