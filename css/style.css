@@ -5,6 +5,10 @@
   font-family: "spotify-circular";
 }
 
+html {
+  scrollbar-color: "colore" transparent;
+}
+
 .debug{
   border:1px solid white;
 }
@@ -141,10 +145,11 @@ p{
 .img{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .flex-item-img{
-  width: 200px;
+  width: calc((100% / 5) - 40px);
   height: 200px;
   background-image: url(../img/queen.jpg);
   background-size: cover;
@@ -196,4 +201,28 @@ p{
   height: 100px;
   position:fixed;
   bottom:0;
+}
+
+@media screen and (max-width: 1199px) {
+  .img .flex-item-img:nth-child(5){
+    display:none;
+  }
+
+  .flex-item-img{
+    width: calc((100% / 4) - 40px);
+  }
+
+
+}
+
+@media screen and (max-width: 768px) {
+  .img .flex-item-img:nth-child(4){
+    display:none;
+  }
+
+  .flex-item-img{
+    width: calc((100% / 3) - 40px);
+  }
+
+
 }
