@@ -91,7 +91,7 @@ p{
 }
 .menu ul li:nth-child(3)::before{
   background: url(../img/svg6.svg);
-  filter:background grey;
+  color:hsla(0, 100%, 100%, 1);
 }
 
 .install-app{
