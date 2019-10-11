@@ -487,8 +487,22 @@ p{
     display:none;
   }
 
+  .nav-laterale,
+  .title{
+    font-size: 80%;
+  }
+
+  .nav-laterale{
+    width: 20%;
+  }
+
+  .global-song{
+    width: 80%;
+    margin-left:20%;
+  }
+
   .flex-item-img{
-    width: calc((100% / 4) - 40px);
+    width: calc((100% / 4) - 10px);
   }
 
   .title a:first-child{
@@ -499,8 +513,13 @@ p{
 
 }
 @media screen and (max-width: 900px) {
+
+  .top-nav-orizzontale{
+    display: none;
+  }
+
   .flex-item-img{
-    width: calc((100% / 2) - 40px);
+    width: calc((100% / 2) - 20px);
     margin-bottom: 20px;
   }
 
@@ -518,9 +537,26 @@ p{
     display:none;
   }
 
+  .logo,
+  .menu,
+  .create-playlist,
+  .install-app,
+  .profile{
+    display:none;
+  }
+
+  .nav-laterale{
+    width: 10%;
+  }
+
+  .global-song{
+    width: 90%;
+    margin-left:10%;
+  }
+
 
   .flex-item-img{
-    width: calc((100% / 2) - 40px);
+    width: calc((100% / 2) - 10px);
   }
 
   .title a:first-child{
