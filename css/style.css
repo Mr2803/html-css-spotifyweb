@@ -55,6 +55,10 @@ p{
   padding:0 24px;
 }
 
+.logomobile{
+  display:none
+}
+
 .menu{
   height: 25%;
 }
@@ -512,7 +516,7 @@ p{
 
 
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 999px) {
 
   .top-nav-orizzontale{
     display: none;
@@ -537,6 +541,10 @@ p{
     display:none;
   }
 
+  .logomobile{
+    display:inline-block;
+  }
+
   .logo,
   .menu,
   .create-playlist,
@@ -547,6 +555,10 @@ p{
 
   .nav-laterale{
     width: 10%;
+  }
+
+  .logomobile:hover .nav-laterale{
+    width:20%;
   }
 
   .global-song{
