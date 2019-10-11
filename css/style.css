@@ -337,13 +337,35 @@ p{
 
 
 .player-second{
-  width:40%;
+  width:50%;
 
 }
 
 .player-second ul li{
   list-style-type: none;
   display:inline-block;
+}
+.player-second ul li i{
+  color:grey;
+  padding-right: 15px;
+}
+
+.player-second ul li:last-child i{
+  position:relative;
+  padding-right: 70px;
+}
+
+.player-second ul li:last-child i::after{
+  content:"";
+  width: 50px;
+  height:3px;
+  background:grey;
+  display:inline-block;
+  margin-left: 15px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
 }
 
 /* /NOTE: player */
