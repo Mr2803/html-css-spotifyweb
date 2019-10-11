@@ -125,12 +125,21 @@ p{
   overflow-y: scroll;
   height: 200px;
   margin-top: 20px;
-
   border: 1px solid grey;
 }
 
  .overflow_ul ul {
   list-style-type: none;
+}
+
+.overflow_ul ul li{
+  margin-bottom:5px;
+}
+
+ .overflow_ul ul li::before{
+  content:"+";
+  color:grey;
+  margin-right:10px;
 }
 
 
