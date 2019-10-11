@@ -509,7 +509,7 @@ p{
   }
 
   .flex-item-img{
-    width: calc((100% / 2) - 20px);
+    width: calc((100% / 2) - 60px);
     margin-bottom: 20px;
   }
 
@@ -551,6 +551,10 @@ p{
     font-weight: bold;
   }
 
+  .player{
+    justify-content: space-around;
+  }
+
   .bar {
      background: rgb(189, 52, 39);
   }
@@ -565,8 +569,6 @@ p{
   .blocco-song{
     padding:20px;
   }
-
-
 
   .img .flex-item-img:nth-child(3),
   .img .flex-item-img:nth-child(4){
@@ -609,12 +611,16 @@ p{
     font-weight: bold;
   }
 
+  .player-first{
+    width:auto;
+  }
+
   .bar {
      background: rgb(194, 173, 31);
   }
 
-
 }
+
 @media screen and (max-width: 500px) {
 
   .global{
@@ -650,6 +656,10 @@ p{
 
   .bar {
      background: rgb(132, 60, 196);
+  }
+
+  .player-second{
+    display:none;
   }
 
 
