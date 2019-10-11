@@ -233,7 +233,7 @@ p{
   display:flex;
   justify-content: space-between;
   flex-direction: column;
-  padding: 50px;
+  padding: 40px;
 }
 
 .title{
@@ -431,7 +431,6 @@ p{
 
 .player-second{
   width:50%;
-
 }
 
 .player-second ul li{
@@ -471,14 +470,13 @@ p{
 }
 
 @keyframes volume {
+  0%{
+    width:70px;
+  }
 
-0%{
-  width:70px;
-}
-
-100%{
-  width:10px;
-}
+  100%{
+    width:10px;
+  }
 
 }
 
@@ -489,7 +487,7 @@ p{
 @media screen and (max-width: 1199px) {
 
   .global{
-    background-image: linear-gradient(to right bottom, rgb(189, 156, 39), rgb(208, 116, 41)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
+    background-image: linear-gradient(to right bottom, rgb(189, 156, 39), rgb(0,0,0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
   }
 
   .img .flex-item-img:nth-child(5){
@@ -511,7 +509,8 @@ p{
   }
 
   .flex-item-img{
-    width: calc((100% / 4) - 10px);
+    width: calc((100% / 2) - 20px);
+    margin-bottom: 20px;
   }
 
   .title a:first-child{
@@ -526,6 +525,14 @@ p{
 }
 @media screen and (max-width: 999px) {
 
+  .blocco-song{
+    padding:30px;
+  }
+
+  .img .flex-item-img:nth-child(4){
+    display:none;
+  }
+
   .global{
     background-image: linear-gradient(to right bottom,rgb(212, 195, 181) , rgb(189, 52, 39)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
   }
@@ -535,7 +542,7 @@ p{
   }
 
   .flex-item-img{
-    width: calc((100% / 2) - 20px);
+    width: calc((100% / 3) - 20px);
     margin-bottom: 20px;
   }
 
@@ -554,6 +561,12 @@ p{
   .global{
     background-image: linear-gradient(to right bottom,rgb(194, 173, 31) , rgb(0,0,0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
   }
+
+  .blocco-song{
+    padding:20px;
+  }
+
+
 
   .img .flex-item-img:nth-child(3),
   .img .flex-item-img:nth-child(4){
@@ -588,6 +601,7 @@ p{
 
   .flex-item-img{
     width: calc((100% / 2) - 10px);
+    margin-bottom: 0px;
   }
 
   .title a:first-child{
@@ -602,12 +616,26 @@ p{
 
 }
 @media screen and (max-width: 500px) {
+
+  .global{
+    background-image: linear-gradient(to right bottom,rgb(132, 60, 196) , rgb(0,0,0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
+  }
+
   .img .flex-item-img:nth-child(2){
     display:none;
   }
 
+  .title{
+    justify-content: center;
+  }
+
+  .title a:last-child{
+    display:none;
+  }
+
   .flex-item-img{
-    width: calc(100%  - 40px);
+    width: calc(100% - 40px);
+    margin-bottom: 0px;
   }
 
   .flex-item-img img,
@@ -615,11 +643,13 @@ p{
     border-radius: 50%;
   }
 
-
-
   .title a:first-child{
     font-size: 25px;
     font-weight: bold;
+  }
+
+  .bar {
+     background: rgb(132, 60, 196);
   }
 
 
