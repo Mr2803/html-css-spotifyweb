@@ -45,7 +45,7 @@ p{
 
 .nav-laterale{
   height: calc(100vh - 100px);
-  width:12%;
+  width:15%;
   background-color: rgba(0,0,0,.8);
   display:flex;
   flex-direction: column;
@@ -219,12 +219,12 @@ p{
 
   /* NOTE: blocco canzoni  */
 .global-song{
-  width: 88%;
+  width: 85%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin-left:12%;
+  margin-left:15%;
 }
 
 
@@ -487,6 +487,11 @@ p{
 /* NOTE: mediaquery */
 
 @media screen and (max-width: 1199px) {
+
+  .global{
+    background-image: linear-gradient(to right bottom, rgb(189, 156, 39), rgb(208, 116, 41)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
+  }
+
   .img .flex-item-img:nth-child(5){
     display:none;
   }
@@ -514,9 +519,16 @@ p{
     font-weight: bold;
   }
 
+  .bar {
+     background: rgb(208, 116, 41);
+  }
 
 }
 @media screen and (max-width: 999px) {
+
+  .global{
+    background-image: linear-gradient(to right bottom,rgb(212, 195, 181) , rgb(189, 52, 39)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
+  }
 
   .top-nav-orizzontale{
     display: none;
@@ -532,10 +544,17 @@ p{
     font-weight: bold;
   }
 
+  .bar {
+     background: rgb(189, 52, 39);
+  }
 
 }
 
 @media screen and (max-width: 768px) {
+  .global{
+    background-image: linear-gradient(to right bottom,rgb(194, 173, 31) , rgb(0,0,0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
+  }
+
   .img .flex-item-img:nth-child(3),
   .img .flex-item-img:nth-child(4){
     display:none;
@@ -574,6 +593,10 @@ p{
   .title a:first-child{
     font-size: 25px;
     font-weight: bold;
+  }
+
+  .bar {
+     background: rgb(194, 173, 31);
   }
 
 
