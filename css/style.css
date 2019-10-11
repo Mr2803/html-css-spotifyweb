@@ -347,22 +347,26 @@ p{
 }
 .player-second ul li i{
   color:grey;
-  padding-right: 15px;
+  padding-right: 10px;
+}
+.player-second ul li i:hover{
+  color:white;
 }
 
 .player-second ul li:last-child i{
   position:relative;
-  padding-right: 70px;
+  padding-right: 100px;
 }
 
 .player-second ul li:last-child i::after{
   content:"";
-  width: 50px;
+  width: 70px;
   height:3px;
   background:grey;
   display:inline-block;
   margin-left: 15px;
   position:absolute;
+  border-radius: 1px;
   top:50%;
   left:50%;
   transform:translate(-50%,-50%);
