@@ -60,7 +60,7 @@ p{
 }
 
 .menu{
-  height: 25%;
+  min-height: 600px;
 }
 
 .menu ul{
@@ -68,7 +68,7 @@ p{
   margin-top: 20px;
 }
 
-.menu ul li{
+.menu .ul_menu li{
   color:white;
   font-weight: bold;
   margin-bottom: 20px;
@@ -77,7 +77,7 @@ p{
   padding-top: 10px;
 }
 
-.menu ul li::before{
+.menu .ul_menu li::before{
   content:"";
   width: 30px;
   height: 30px;
@@ -90,16 +90,15 @@ p{
   top:2px;
 }
 
-.menu ul li:nth-child(2)::before{
+.menu .ul_menu li:nth-child(2)::before{
   background: url(../img/svg4.svg)
 }
-.menu ul li:nth-child(3)::before{
+.menu .ul_menu li:nth-child(3)::before{
   background: url(../img/svg6.svg);
 }
 
 .create-playlist{
   color:grey;
-  height: 55%;
 }
 
 .create-playlist h5{
@@ -138,10 +137,10 @@ p{
 }
 
 .overflow_ul ul li{
-  margin-bottom:5px;
+  margin-bottom:10px;
 }
 
- .overflow_ul ul li::before{
+ .create-playlist .overflow_ul ul li::before{
   content:"+";
   color:grey;
   margin-right:10px;
@@ -183,9 +182,7 @@ p{
   border-radius: 50%;
 }
 
-
-
- /* /NOTE: navbar-laterale */
+/* /NOTE: navbar-laterale */
 
  /* NOTE: navbar superiore  */
 
@@ -277,9 +274,8 @@ p{
 
 .flex-item-img img{
   width: 100%;
-  height: 100%
+  height: 100%;
 }
-
 
 .overlay{
   width: 100%;
@@ -477,7 +473,6 @@ p{
   100%{
     width:10px;
   }
-
 }
 
 /* /NOTE: player */
@@ -558,7 +553,6 @@ p{
   .bar {
      background: rgb(189, 52, 39);
   }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -642,6 +636,12 @@ p{
   .flex-item-img{
     width: calc(100% - 40px);
     margin-bottom: 0px;
+    text-align: center;
+  }
+
+  .flex-item-img img{
+    width: 80%;
+    max-height: auto;
   }
 
   .flex-item-img img,
