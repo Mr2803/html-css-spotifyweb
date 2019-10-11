@@ -106,6 +106,7 @@ p{
 .create-playlist span{
   position:relative;
   margin-left: 35px;
+  font-weight: bold;
 }
 
 .create-playlist span::before{
@@ -142,21 +143,43 @@ p{
   margin-right:10px;
 }
 
-
-
 .install-app{
   color:white;
-  border-bottom: 1px solid rgba(163, 163, 163, 0.75)
+  border-bottom: 1px solid rgba(163, 163, 163, 0.75);
+  padding: 10px;
 }
 
-.global-song{
-  width: 88%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  margin-left:12%;
+.install-app span i{
+  font-size: 20px;
+  margin-right: 10px;
 }
+
+.profile{
+  margin-top: 15px;
+}
+
+.profile span{
+  color:white;
+  position:relative;
+  margin-left: 45px;
+  font-weight: bold;
+}
+
+.profile span:before{
+  content:"";
+  width:25px;
+  height: 25px;
+  background:url(../img/profile.jpeg);
+  background-size: cover;
+  background-position: center;
+  position:absolute;
+  top: -3px;
+  left:-38px;
+  display:inline-block;
+  border-radius: 50%;
+}
+
+
 
  /* /NOTE: navbar-laterale */
 
@@ -191,6 +214,16 @@ p{
  /* /NOTE: navbar superiore  */
 
   /* NOTE: blocco canzoni  */
+.global-song{
+  width: 88%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left:12%;
+}
+
+
 .blocco-song{
   width: 100%;
   display:flex;
@@ -263,6 +296,9 @@ p{
   transform: translate(-50%,-50%)
 }
 
+.overlay i:hover{
+  font-size: 55px;
+}
 
 .flex-item-img:hover .overlay{
   display:inline-block;
@@ -297,12 +333,14 @@ p{
 
 .player-first ul{
  list-style-type: none;
+ margin-bottom: 10px;
 }
 
 .player-first ul li{
   display:inline-block;
   font-size: 20px;
 }
+
 
 .player-first ul li i{
   color:grey;
@@ -421,6 +459,23 @@ p{
   top:50%;
   left:50%;
   transform:translate(-50%,-50%);
+
+}
+
+.player-second ul li:last-child i:active::after{
+  animation : volume 3s linear;
+}
+
+@keyframes volume {
+
+0%{
+  width:70px;
+}
+
+100%{
+  width:10px;
+}
+
 }
 
 /* /NOTE: player */
