@@ -327,7 +327,6 @@ p{
   position:absolute;
   top:0;
   left:0;
-  transition:2s ;
 }
 
 .overlay i{
@@ -346,7 +345,6 @@ p{
 .flex-item-img:hover .overlay{
   display:inline-block;
   background: rgba(24, 27, 25, 0.46) ;
-  transition:2s ;
 }
 /* /NOTE: blocco canzoni  */
 
@@ -589,10 +587,35 @@ p{
     width: 40px;
     height: 40px;
     justify-content: flex-start;
+    position:relative;
   }
 
+  .dropdown-cont{
+    display:none;
+  }
+
+  .dropdown-cont ul{
+    display:block;
+  }
+
+  .navbar-oriz-drop:hover .dropdown-cont{
+    display:inline-block;
+    position:absolute;
+    width:300px;
+    height:300px;
+    top:-20px;
+    left:20px;
+    background-color: black;
+    color:white;
+    z-index:100;
+
+  }
+
+
+
+
   .flex-item-img{
-    width: calc((100% / 3) - 20px);
+    width: calc((100% / 3) - 20px));
     margin-bottom: 20px;
   }
 
@@ -722,6 +745,4 @@ p{
   .player-second{
     display:none;
   }
-
-
 }
