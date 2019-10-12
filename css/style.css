@@ -657,27 +657,55 @@ p{
     left:100%;
     background-color: rgba(0,0,0,.8);
     z-index: 999;
-    animation:extended-nav 0.2s linear;
+    animation:extended-nav 0.4s linear;
   }
 
   @keyframes extended-nav {
     0%{
       top:0px;
-      left:-100%;
+      left:-200%;
     }
 
-    25%{
+    10%{
       top:0px;
-      left:-50%;
+      left:-170%;
+    }
+    20%{
+      top:0px;
+      left:-140%;
+    }
+
+    30%{
+      top:0px;
+      left:-110%;
+    }
+    40%{
+      top:0px;
+      left:-80%;
     }
     50%{
       top:0px;
-      left:0;
+      left:-50%;
     }
-    75%{
+    60%{
       top:0px;
-      left:50%;
+      left:-20%;
     }
+
+    70%{
+      top:0px;
+      left:10%;
+    }
+    80%{
+      top:0px;
+      left:40%;
+    }
+
+    90%{
+      top:0px;
+      left:70%;
+    }
+
     100%{
       top:0px;
       left:100%;
