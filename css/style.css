@@ -715,6 +715,98 @@ p{
     top:2px;
   }
 
+  .menu-dropdown-mobile .ul_menu-dropdown li:nth-child(2)::before{
+    background: url(../img/svg4.svg)
+  }
+  .menu-dropdown-mobile .ul_menu-dropdown li:nth-child(3)::before{
+    background: url(../img/svg6.svg);
+  }
+
+  .create-playlist-dropdown-mobile{
+    color:grey;
+  }
+
+  .create-playlist-dropdown-mobile h5{
+    font-weight: bold;
+    margin-bottom:20px;
+  }
+
+  .create-playlist-dropdown-mobile span{
+    position:relative;
+    margin-left: 35px;
+    font-weight: bold;
+  }
+
+  .create-playlist-dropdown-mobile span::before{
+    content:"";
+    width: 30px;
+    height: 30px;
+    background:url(../img/svg8.svg);
+    display:inline-block;
+    color:white;
+    margin-right: 20px;
+    position:absolute;
+    left:-43px;
+    top:-4px;
+  }
+
+  .overflow_ul-dropdown-mobile{
+    overflow-y: scroll;
+    height: 250px;
+    margin-top: 20px;
+    border: 1px solid grey;
+  }
+
+   .overflow_ul-dropdown-mobile ul {
+    list-style-type: none;
+  }
+
+  .overflow_ul-dropdown-mobile ul li{
+    margin-bottom:10px;
+  }
+
+   .create-playlist .overflow_ul-dropdown-mobile ul li::before{
+    content:"+";
+    color:grey;
+    margin-right:10px;
+  }
+
+  .install-app-dropdown-mobile{
+    color:white;
+    border-bottom: 1px solid rgba(163, 163, 163, 0.75);
+    padding: 10px;
+  }
+
+  .install-app-dropdown-mobile span i{
+    font-size: 20px;
+    margin-right: 10px;
+  }
+
+  .profile-dropdown-mobile{
+    margin-top: 15px;
+  }
+
+  .profile-dropdown-mobile span{
+    color:white;
+    position:relative;
+    margin-left: 45px;
+    font-weight: bold;
+  }
+
+  .profile-dropdown-mobile span:before{
+    content:"";
+    width:25px;
+    height: 25px;
+    background:url(../img/profile.jpeg);
+    background-size: cover;
+    background-position: center;
+    position:absolute;
+    top: -3px;
+    left:-38px;
+    display:inline-block;
+    border-radius: 50%;
+  }
+
   .logo,
   .menu,
   .create-playlist,
