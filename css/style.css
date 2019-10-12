@@ -54,6 +54,7 @@ p{
   position:fixed;
   top:0;
   padding:0 24px;
+  z-index: 200;
 }
 
 .logomobile{
@@ -357,6 +358,7 @@ p{
   height: 100px;
   position:fixed;
   bottom:0;
+  z-index: 999;
 }
 
 .player{
@@ -654,6 +656,54 @@ p{
   .logomobile{
     display:inline-block;
   }
+
+  .dropdown-from-mobile{
+    display:none;
+  }
+
+
+  .navlaterale{
+    position:relative;
+  }
+
+  .logomobile:hover .dropdown-from-mobile{
+    display:inline-block;
+    height: calc(100vh - 100px);
+    width:200px;
+    position:absolute;
+    top:0;
+    left:100%;
+    /* margin-left:calc(100vw - 90%); */
+    background-color: rgba(0,0,0,.8);
+    z-index: 999;
+    animation:prova 3s linear;
+  }
+
+  @keyframes prova {
+    0%{
+      top:0px;
+      left:-200px;
+    }
+
+    25%{
+      top:0px;
+      left:-125px;
+    }
+    50%{
+      top:0px;
+      left:-100px;
+    }
+    75%{
+      top:0px;
+      left:-75px;
+    }
+    100%{
+      top:0px;
+      left:25px;
+    }
+
+  }
+
 
   .logo,
   .menu,
