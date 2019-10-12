@@ -199,19 +199,38 @@ p{
 }
 .top-nav-orizzontale ul li{
   display:inline-block;
+  padding-right: 20px;
+
 }
 
 .top-nav-orizzontale ul li a{
   text-decoration: none;
   opacity: .7;
   color:white;
-  padding-right: 20px;
   font-weight: bold;
+  position:relative;
 }
 
 .top-nav-orizzontale ul li a:hover{
   opacity:1;
 }
+.top-nav-orizzontale ul li a:hover .line{
+  visibility: visible;
+}
+
+.line{
+  width:30px;
+  height: 2px;
+  background: rgb(43, 209, 35);
+  text-align: center;
+  position:absolute;
+  top:120%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  visibility: hidden;
+}
+
+
  /* /NOTE: navbar superiore  */
 
   /* NOTE: blocco canzoni  */
@@ -504,7 +523,7 @@ p{
   }
 
   .flex-item-img{
-    width: calc((100% / 2) - 60px);
+    width: calc((100% / 2) - 90px);
     margin-bottom: 20px;
   }
 
@@ -582,11 +601,13 @@ p{
   }
 
   .nav-laterale{
-    max-width: 10%
+    width: 10%;
+    align-items: center;
   }
 
   .logomobile{
-    width:100%;
+    width:30px;
+    margin-top: 20px;
   }
 
   .global-song{
@@ -596,7 +617,7 @@ p{
 
 
   .flex-item-img{
-    width: calc((100% / 2) - 10px);
+    width: calc((100% / 2) - 30px);
     margin-bottom: 0px;
   }
 
