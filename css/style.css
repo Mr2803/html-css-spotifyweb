@@ -582,11 +582,11 @@ p{
   }
 
   .nav-laterale{
-    width: 10%;
+    max-width: 10%
   }
 
-  .logomobile:hover .nav-laterale{
-    width:20%;
+  .logomobile{
+    width:100%;
   }
 
   .global-song{
@@ -633,20 +633,22 @@ p{
     display:none;
   }
 
+
+
   .flex-item-img{
-    width: calc(100% - 40px);
+    width: calc(100% - 100px);
     margin-bottom: 0px;
     text-align: center;
   }
 
   .flex-item-img img{
-    width: 80%;
-    max-height: auto;
+    width: 100%;
+    height: auto;
   }
 
   .flex-item-img img,
   .flex-item-img .overlay{
-    border-radius: 50%;
+    border-radius: 50% 70% ;
   }
 
   .title a:first-child{
