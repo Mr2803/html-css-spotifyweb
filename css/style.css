@@ -687,6 +687,7 @@ p{
 
   .menu-dropdown-mobile{
     padding-top:50px;
+    padding-right: 10px;
   }
 
   .ul_menu-dropdown{
@@ -765,7 +766,7 @@ p{
     margin-bottom:10px;
   }
 
-   .create-playlist .overflow_ul-dropdown-mobile ul li::before{
+   .create-playlist-dropdown-mobile .overflow_ul-dropdown-mobile ul li::before{
     content:"+";
     color:grey;
     margin-right:10px;
@@ -775,6 +776,7 @@ p{
     color:white;
     border-bottom: 1px solid rgba(163, 163, 163, 0.75);
     padding: 10px;
+    margin-top: 20px;
   }
 
   .install-app-dropdown-mobile span i{
