@@ -214,9 +214,7 @@ p{
 .top-nav-orizzontale ul li a:hover{
   opacity:1;
 }
-.top-nav-orizzontale ul li a:hover .line{
-  visibility: visible;
-}
+
 
 .line{
   width:30px;
@@ -227,8 +225,26 @@ p{
   top:120%;
   left: 50%;
   transform: translate(-50%,-50%);
+
+}
+
+.top-nav-orizzontale ul li:not(:first-child) a .line{
   visibility: hidden;
 }
+
+.top-nav-orizzontale ul li a:hover .line{
+  visibility: visible;
+}
+
+.top-nav-orizzontale ul li:nth-child(2):hover + li:first-child .line{
+  visibility: hidden;
+}
+
+
+.top-nav-orizzontale ul li:nth-child(2) >a:hover .line.first{
+  visibility: hidden;
+}
+
 
 
  /* /NOTE: navbar superiore  */
