@@ -968,6 +968,18 @@ min-width: calc(100% / 3 )
     margin-left: 0;
   }
 
+  .dropdown-from-mobile .song-play::before{
+    position:absolute;
+    content:"";
+    width:20px;
+    height: 20px;
+    color:white;
+    top:6px;
+    left:-27px;
+    background: url(../img/headphones.svg);
+    display:inline-block;
+  }
+
 
 
   .logo,
