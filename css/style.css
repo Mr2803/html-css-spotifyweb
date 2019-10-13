@@ -510,7 +510,7 @@ p{
 @media screen and (max-width: 1199px) {
 
   .global{
-    background-image: linear-gradient(to right bottom, rgb(189, 156, 39), rgb(0,0,0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
+    background-image: linear-gradient(to right bottom, rgb(208, 116, 41), rgb(0,0,0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
   }
 
   .img .flex-item-img:nth-child(5){
@@ -681,7 +681,7 @@ p{
 
 
   .flex-item-img{
-    width: calc((100% / 3) - 5px);
+    width: calc((100% / 3) - 10px);
     margin-bottom: 20px;
   }
 
