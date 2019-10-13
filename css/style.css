@@ -547,6 +547,9 @@ p{
 
 }
 @media screen and (max-width: 999px) {
+  .global{
+    background-image: linear-gradient(to right bottom,rgb(212, 195, 181) , rgb(189, 52, 39)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
+  }
 
   .blocco-song{
     padding:30px;
@@ -556,9 +559,7 @@ p{
     display:none;
   }
 
-  .global{
-    background-image: linear-gradient(to right bottom,rgb(212, 195, 181) , rgb(189, 52, 39)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
-  }
+
 
   .top-nav-orizzontale{
     width:100%;
@@ -569,10 +570,17 @@ p{
     display: none;
   }
 
+  .navbar-oriz-drop .global-drop:hover .dropdown-cont{
+    display:inline-block;
+    position:absolute;
+    top:42px;
+    left:13px;
+    color:white;
+    z-index:100;
+  }
+
   .navbar-oriz-drop{
     display:block;
-    width: 40px;
-    height: 40px;
     justify-content: flex-start;
     position:relative;
   }
@@ -585,18 +593,89 @@ p{
     display:block;
   }
 
-  .navbar-oriz-drop:hover .dropdown-cont{
-    display:inline-block;
-    position:absolute;
-    width:300px;
-    height:300px;
-    top:-20px;
-    left:20px;
-    background-color: black;
-    color:white;
-    z-index:100;
-
+  .dropdown-cont ul.ul-drop-cont li{
+    display: block;
+    width: auto;
+    border:1px solid white;
   }
+
+  .dropdown-cont ul.ul-drop-cont li {
+  transform-origin: top left;
+}
+
+.dropdown-cont ul.ul-drop-cont li:nth-child(1) {
+  background-color: rgba(0,0,0,.8);
+  padding:10px;
+  animation-name: Toptobottom;
+  animation-duration: 400ms;
+  animation-delay: -150ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.dropdown-cont ul.ul-drop-cont li:nth-child(2) {
+  background-color: rgba(0,0,0,.8);
+  padding:10px;
+  animation-name: Toptobottom;
+  animation-duration: 400ms;
+  animation-delay: 0ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.dropdown-cont ul.ul-drop-cont li:nth-child(3) {
+  background-color: rgba(0,0,0,.8);
+  padding:10px;
+  animation-name: Toptobottom;
+  animation-duration: 400ms;
+  animation-delay: 150ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.dropdown-cont ul.ul-drop-cont li:nth-child(4) {
+  background-color: rgba(0,0,0,.8);
+  padding:10px;
+  animation-name: Toptobottom;
+  animation-duration: 400ms;
+  animation-delay: 300ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.dropdown-cont ul.ul-drop-cont li:nth-child(5) {
+  background-color: rgba(0,0,0,.8);
+  padding:10px;
+  animation-name: Toptobottom;
+  animation-duration: 400ms;
+  animation-delay: 450ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.dropdown-cont ul.ul-drop-cont li:nth-child(6) {
+  background-color: rgba(0,0,0,.8);
+  padding:10px;
+  animation-name: Toptobottom;
+  animation-duration: 400ms;
+  animation-delay: 600ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes Toptobottom {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+
+
 
   .flex-item-img{
     width: calc((100% / 3) - 20px));
