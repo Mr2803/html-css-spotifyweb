@@ -257,10 +257,10 @@ p{
 
 
 .blocco-song{
-  width: 100%;
+  /* width: 100%;
   display:flex;
   justify-content: space-between;
-  flex-direction: column;
+  flex-direction: column; */
   padding: 40px;
 }
 
