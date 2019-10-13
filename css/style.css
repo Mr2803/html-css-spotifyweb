@@ -738,7 +738,7 @@ min-width: calc(100% / 3 )
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 778px) {
   .global{
     background-image: linear-gradient(to right bottom,rgb(194, 173, 31) , rgb(0,0,0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
   }
@@ -959,8 +959,9 @@ min-width: calc(100% / 3 )
   }
 
   .dropdown-from-mobile .song-play{
-    margin-top: 90px;
+    margin-top: 80px;
     position:relative;
+    min-height: 30px;
   }
 
   .dropdown-from-mobile .song-play img{
@@ -979,8 +980,6 @@ min-width: calc(100% / 3 )
     background: url(../img/headphones.svg);
     display:inline-block;
   }
-
-
 
   .logo,
   .menu,
@@ -1019,7 +1018,6 @@ min-width: calc(100% / 3 )
   .player-first{
     max-width: 100%;
   }
-
 
   .player{
     justify-content: center;
