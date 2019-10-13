@@ -387,12 +387,16 @@ min-width: calc(100% / 3 )
 }
 .player-first ul li i:hover{
   color:white;
+
 }
 
 .player-first ul li:nth-child(3) i{
   border:1px solid grey;
   border-radius: 50%;
   padding: 10px;
+}
+.player-first ul li:nth-child(3) i:hover{
+  border-color:white;
 }
 
 #bars {
@@ -524,6 +528,11 @@ scaletta:
  blocco canzoni
  player*/
 
+@media screen and (min-width: 1200px) {
+  .logo{
+    max-width: 70%;
+  }
+}
 
 @media screen and (max-width: 1199px) {
 
