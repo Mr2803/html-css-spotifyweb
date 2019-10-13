@@ -36,6 +36,7 @@
 
 .nav-laterale{
   height: calc(100vh - 100px);
+  min-height: 600px;
   width:15%;
   background-color: rgba(0,0,0,.8);
   display:flex;
@@ -114,7 +115,7 @@
 
 .overflow_ul{
   overflow-y: scroll;
-  height: 250px;
+  height: 200px;
   margin-top: 20px;
   border: 1px solid grey;
 }
