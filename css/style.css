@@ -7,10 +7,6 @@
   font-family: "spotify-circular";
 }
 
-html {
-  scrollbar-color: "colore" transparent;
-}
-
 .debug{
   border:1px solid white;
 }
@@ -27,7 +23,6 @@ html {
   max-width: 100%;
   display:flex;
   flex-direction: row;
-  /* margin-bottom: 100px; */
   overflow-y: scroll;
 }
 /* /NOTE: regole generali */
@@ -36,12 +31,7 @@ html {
 
 .logo img{
   filter:invert(1);
-  width:70%;
   margin-top: 5px;
-}
-
-p{
-  color:white;
 }
 
 .nav-laterale{
@@ -61,13 +51,8 @@ p{
   display:none
 }
 
-/* .menu{
-  min-height: 600px;
-} */
-
 .menu ul{
   list-style-type: none;
-  /* margin-top: 20px; */
 }
 
 .menu .ul_menu li{
@@ -183,7 +168,6 @@ p{
   display:inline-block;
   border-radius: 50%;
 }
-
 /* /NOTE: navbar-laterale */
 
  /* NOTE: navbar superiore  */
@@ -199,10 +183,10 @@ p{
 .top-nav-orizzontale ul{
  list-style-type:none;
 }
+
 .top-nav-orizzontale ul li{
   display:inline-block;
   padding-right: 20px;
-
 }
 
 .top-nav-orizzontale ul li a{
@@ -239,11 +223,9 @@ p{
 .navbar-oriz-drop{
   display:none;
 }
+/* /NOTE: navbar superiore  */
 
-
- /* /NOTE: navbar superiore  */
-
-  /* NOTE: blocco canzoni  */
+/* NOTE: blocco canzoni  */
 .global-song{
   width: 85%;
   display: flex;
@@ -255,10 +237,6 @@ p{
 
 
 .blocco-song{
-  /* width: 100%;
-  display:flex;
-  justify-content: space-between;
-  flex-direction: column; */
   padding: 40px;
 }
 
@@ -454,40 +432,40 @@ min-width: calc(100% / 3 )
 .bar:nth-child(8)  { left: 41px; animation-duration: 419ms; }
 .bar:nth-child(9)  { left: 47px; animation-duration: 487ms; }
 .bar:nth-child(10) { left: 53px; animation-duration: 442ms; }​
-.bar:nth-child(11)  { left: 59px; animation-duration: 474ms; }
-.bar:nth-child(12)  { left: 65px; animation-duration: 433ms; }
-.bar:nth-child(13)  { left: 71px; animation-duration: 407ms; }
-.bar:nth-child(14)  { left: 77px; animation-duration: 458ms; }
-.bar:nth-child(15)  { left: 83px; animation-duration: 400ms; }
-.bar:nth-child(16)  { left: 89px; animation-duration: 427ms; }
-.bar:nth-child(17)  { left: 95px; animation-duration: 441ms; }
-.bar:nth-child(18)  { left: 101px; animation-duration: 419ms; }
-.bar:nth-child(19)  { left: 107px; animation-duration: 487ms; }
+.bar:nth-child(11) { left: 59px; animation-duration: 474ms; }
+.bar:nth-child(12) { left: 65px; animation-duration: 433ms; }
+.bar:nth-child(13) { left: 71px; animation-duration: 407ms; }
+.bar:nth-child(14) { left: 77px; animation-duration: 458ms; }
+.bar:nth-child(15) { left: 83px; animation-duration: 400ms; }
+.bar:nth-child(16) { left: 89px; animation-duration: 427ms; }
+.bar:nth-child(17) { left: 95px; animation-duration: 441ms; }
+.bar:nth-child(18) { left: 101px; animation-duration: 419ms;}
+.bar:nth-child(19) { left: 107px; animation-duration: 487ms; }
 .bar:nth-child(20) { left: 113px; animation-duration: 442ms; }​
-.bar:nth-child(21)  { left: 119px; animation-duration: 474ms; }
-.bar:nth-child(22)  { left: 125px; animation-duration: 433ms; }
-.bar:nth-child(23)  { left: 131px; animation-duration: 407ms; }
-.bar:nth-child(24)  { left: 137px; animation-duration: 458ms; }
-.bar:nth-child(25)  { left: 143px; animation-duration: 400ms; }
-.bar:nth-child(26)  { left: 149px; animation-duration: 427ms; }
-.bar:nth-child(27)  { left: 155px; animation-duration: 441ms; }
-.bar:nth-child(28)  { left: 161px; animation-duration: 419ms; }
-.bar:nth-child(29)  { left: 167px; animation-duration: 487ms; }
+.bar:nth-child(21) { left: 119px; animation-duration: 474ms; }
+.bar:nth-child(22) { left: 125px; animation-duration: 433ms; }
+.bar:nth-child(23) { left: 131px; animation-duration: 407ms; }
+.bar:nth-child(24) { left: 137px; animation-duration: 458ms; }
+.bar:nth-child(25) { left: 143px; animation-duration: 400ms; }
+.bar:nth-child(26) { left: 149px; animation-duration: 427ms; }
+.bar:nth-child(27) { left: 155px; animation-duration: 441ms; }
+.bar:nth-child(28) { left: 161px; animation-duration: 419ms; }
+.bar:nth-child(29) { left: 167px; animation-duration: 487ms; }
 .bar:nth-child(30) { left: 173px; animation-duration: 442ms; }​
-.bar:nth-child(31)  { left: 179px; animation-duration: 474ms; }
-.bar:nth-child(32)  { left: 185px; animation-duration: 433ms; }
-.bar:nth-child(33)  { left: 191px; animation-duration: 407ms; }
-.bar:nth-child(34)  { left: 197px; animation-duration: 458ms; }
-.bar:nth-child(35)  { left: 203px; animation-duration: 400ms; }
-.bar:nth-child(36)  { left: 209px; animation-duration: 427ms; }
-.bar:nth-child(37)  { left: 215px; animation-duration: 441ms; }
-.bar:nth-child(38)  { left: 221px; animation-duration: 419ms; }
-.bar:nth-child(39)  { left: 227px; animation-duration: 487ms; }
+.bar:nth-child(31) { left: 179px; animation-duration: 474ms; }
+.bar:nth-child(32) { left: 185px; animation-duration: 433ms; }
+.bar:nth-child(33) { left: 191px; animation-duration: 407ms; }
+.bar:nth-child(34) { left: 197px; animation-duration: 458ms; }
+.bar:nth-child(35) { left: 203px; animation-duration: 400ms; }
+.bar:nth-child(36) { left: 209px; animation-duration: 427ms; }
+.bar:nth-child(37) { left: 215px; animation-duration: 441ms; }
+.bar:nth-child(38) { left: 221px; animation-duration: 419ms; }
+.bar:nth-child(39) { left: 227px; animation-duration: 487ms; }
 .bar:nth-child(40) { left: 233px; animation-duration: 442ms; }​
 
 
 .player-second{
-  min-width: calc(100% / 3);
+  min-width: 33.3%;
 }
 
 .player-second ul li{
@@ -538,16 +516,19 @@ min-width: calc(100% / 3 )
 
 /* /NOTE: player */
 
-/* NOTE: mediaquery */
+/* NOTE: mediaquery
+scaletta:
+ regole generali
+ navlaterale
+ navorizzontale
+ blocco canzoni
+ player*/
+
 
 @media screen and (max-width: 1199px) {
 
   .global{
     background-image: linear-gradient(to right bottom, rgb(208, 116, 41), rgb(0,0,0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
-  }
-
-  .img .flex-item-img:nth-child(5){
-    display:none;
   }
 
   .nav-laterale,
@@ -564,14 +545,18 @@ min-width: calc(100% / 3 )
     margin-left:20%;
   }
 
-  .flex-item-img{
-    width: calc((100% / 2) - 120px);
-    margin-bottom: 20px;
-  }
-
   .title a:first-child{
     font-size: 35px;
     font-weight: bold;
+  }
+
+  .img .flex-item-img:nth-child(5){
+    display:none;
+  }
+
+  .flex-item-img{
+    width: calc((100% / 2) - 120px);
+    margin-bottom: 20px;
   }
 
   .bar {
@@ -583,16 +568,6 @@ min-width: calc(100% / 3 )
   .global{
     background-image: linear-gradient(to right bottom,rgb(212, 195, 181) , rgb(189, 52, 39)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
   }
-
-  .blocco-song{
-    padding:30px;
-  }
-
-  .img .flex-item-img:nth-child(4){
-    display:none;
-  }
-
-
 
   .top-nav-orizzontale{
     width:100%;
@@ -639,88 +614,94 @@ min-width: calc(100% / 3 )
     color:white;
   }
 
-.dropdown-cont ul.ul-drop-cont li:nth-child(1) {
-  background-color: rgba(0,0,0,.8);
-  padding:10px;
-  animation-name: Toptobottom;
-  animation-duration: 400ms;
-  animation-delay: -150ms;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-.dropdown-cont ul.ul-drop-cont li:nth-child(2) {
-  background-color: rgba(0,0,0,.8);
-  padding:10px;
-  animation-name: Toptobottom;
-  animation-duration: 400ms;
-  animation-delay: 0ms;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-.dropdown-cont ul.ul-drop-cont li:nth-child(3) {
-  background-color: rgba(0,0,0,.8);
-  padding:10px;
-  animation-name: Toptobottom;
-  animation-duration: 400ms;
-  animation-delay: 150ms;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-.dropdown-cont ul.ul-drop-cont li:nth-child(4) {
-  background-color: rgba(0,0,0,.8);
-  padding:10px;
-  animation-name: Toptobottom;
-  animation-duration: 400ms;
-  animation-delay: 300ms;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-.dropdown-cont ul.ul-drop-cont li:nth-child(5) {
-  background-color: rgba(0,0,0,.8);
-  padding:10px;
-  animation-name: Toptobottom;
-  animation-duration: 400ms;
-  animation-delay: 450ms;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-.dropdown-cont ul.ul-drop-cont li:nth-child(6) {
-  background-color: rgba(0,0,0,.8);
-  padding:10px;
-  animation-name: Toptobottom;
-  animation-duration: 400ms;
-  animation-delay: 600ms;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
-  opacity: 0;
-}
-
-@keyframes Toptobottom {
-  0% {
+  .dropdown-cont ul.ul-drop-cont li:nth-child(1) {
+    background-color: rgba(0,0,0,.8);
+    padding:10px;
+    animation-name: Toptobottom;
+    animation-duration: 400ms;
+    animation-delay: -150ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
     opacity: 0;
-    transform: rotateX(-90deg);
   }
-  100% {
-    opacity: 1;
-    transform: rotateX(0deg);
+  .dropdown-cont ul.ul-drop-cont li:nth-child(2) {
+    background-color: rgba(0,0,0,.8);
+    padding:10px;
+    animation-name: Toptobottom;
+    animation-duration: 400ms;
+    animation-delay: 0ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
   }
-}
+  .dropdown-cont ul.ul-drop-cont li:nth-child(3) {
+    background-color: rgba(0,0,0,.8);
+    padding:10px;
+    animation-name: Toptobottom;
+    animation-duration: 400ms;
+    animation-delay: 150ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  .dropdown-cont ul.ul-drop-cont li:nth-child(4) {
+    background-color: rgba(0,0,0,.8);
+    padding:10px;
+    animation-name: Toptobottom;
+    animation-duration: 400ms;
+    animation-delay: 300ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  .dropdown-cont ul.ul-drop-cont li:nth-child(5) {
+    background-color: rgba(0,0,0,.8);
+    padding:10px;
+    animation-name: Toptobottom;
+    animation-duration: 400ms;
+    animation-delay: 450ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  .dropdown-cont ul.ul-drop-cont li:nth-child(6) {
+    background-color: rgba(0,0,0,.8);
+    padding:10px;
+    animation-name: Toptobottom;
+    animation-duration: 400ms;
+    animation-delay: 600ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
 
-
-
-  .flex-item-img{
-    width: calc((100% / 3) - 10px);
-    margin-bottom: 20px;
+  @keyframes Toptobottom {
+    0% {
+      opacity: 0;
+      transform: rotateX(-90deg);
+    }
+    100% {
+      opacity: 1;
+      transform: rotateX(0deg);
+    }
   }
 
   .title a:first-child{
     font-size: 35px;
     font-weight: bold;
+  }
+
+  .blocco-song{
+    padding:30px;
+  }
+
+  .img .flex-item-img:nth-child(4){
+    display:none;
+  }
+
+  .flex-item-img{
+    width: calc((100% / 3) - 10px);
+    margin-bottom: 20px;
   }
 
   .player{
@@ -741,31 +722,28 @@ min-width: calc(100% / 3 )
     background-image: linear-gradient(to right bottom,rgb(194, 173, 31) , rgb(0,0,0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
   }
 
-  .blocco-song{
-    padding:20px;
+  .nav-laterale{
+    width: 10%;
+    justify-content: flex-start;
+    align-items: center;
   }
 
-  .img .flex-item-img:nth-child(3),
-  .img .flex-item-img:nth-child(4){
+  .logo,
+  .menu,
+  .create-playlist,
+  .install-app,
+  .profile{
     display:none;
-  }
-
-  .top-nav-orizzontale{
-    display:none;
-  }
-
-  .logomobile{
-    display:inline-block;
   }
 
   .dropdown-from-mobile{
     display:none;
   }
 
-
-  .navlaterale{
-    position:relative;
-    justify-content: flex-start;
+  .logomobile{
+    display:inline-block;
+    width:30px;
+    margin-top: 20px;
   }
 
   .logomobile:hover .dropdown-from-mobile{
@@ -980,23 +958,8 @@ min-width: calc(100% / 3 )
     display:inline-block;
   }
 
-  .logo,
-  .menu,
-  .create-playlist,
-  .install-app,
-  .profile{
+  .top-nav-orizzontale{
     display:none;
-  }
-
-  .nav-laterale{
-    width: 10%;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  .logomobile{
-    width:30px;
-    margin-top: 20px;
   }
 
   .global-song{
@@ -1004,6 +967,14 @@ min-width: calc(100% / 3 )
     margin-left:10%;
   }
 
+  .blocco-song{
+    padding:20px;
+  }
+
+  .img .flex-item-img:nth-child(3),
+  .img .flex-item-img:nth-child(4){
+    display:none;
+  }
 
   .flex-item-img{
     width: calc((100% / 2) - 30px);
@@ -1040,15 +1011,15 @@ min-width: calc(100% / 3 )
     background-image: linear-gradient(to right bottom,rgb(132, 60, 196) , rgb(0,0,0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
   }
 
-  .img .flex-item-img:nth-child(2){
-    display:none;
-  }
-
   .title{
     justify-content: center;
   }
 
   .title a:last-child{
+    display:none;
+  }
+
+  .img .flex-item-img:nth-child(2){
     display:none;
   }
 
@@ -1076,6 +1047,5 @@ min-width: calc(100% / 3 )
   .bar {
      background: rgb(132, 60, 196);
   }
-
 
 }
