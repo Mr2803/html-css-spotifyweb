@@ -50,7 +50,7 @@ p{
   background-color: rgba(0,0,0,.8);
   display:flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-around;
   position:fixed;
   top:0;
   padding:0 24px;
@@ -61,13 +61,13 @@ p{
   display:none
 }
 
-.menu{
+/* .menu{
   min-height: 600px;
-}
+} */
 
 .menu ul{
   list-style-type: none;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 .menu .ul_menu li{
@@ -150,23 +150,23 @@ p{
 
 .install-app{
   color:white;
-  border-bottom: 1px solid rgba(163, 163, 163, 0.75);
-  padding: 10px;
 }
 
 .install-app span i{
   font-size: 20px;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .profile{
-  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(163, 163, 163, 0.75);
 }
 
 .profile span{
   color:white;
   position:relative;
-  margin-left: 45px;
+  margin-left: 38px;
   font-weight: bold;
 }
 
@@ -217,7 +217,6 @@ p{
   opacity:1;
 }
 
-
 .line{
   width:30px;
   height: 2px;
@@ -227,7 +226,6 @@ p{
   top:120%;
   left: 50%;
   transform: translate(-50%,-50%);
-
 }
 
 .top-nav-orizzontale ul li:not(:first-child) a .line{
@@ -767,6 +765,7 @@ min-width: calc(100% / 3 )
 
   .navlaterale{
     position:relative;
+    justify-content: flex-start;
   }
 
   .logomobile:hover .dropdown-from-mobile{
@@ -991,6 +990,7 @@ min-width: calc(100% / 3 )
 
   .nav-laterale{
     width: 10%;
+    justify-content: flex-start;
     align-items: center;
   }
 
