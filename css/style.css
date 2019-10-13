@@ -575,7 +575,7 @@ p{
     position:absolute;
     top:42px;
     left:13px;
-    color:white;
+    color:grey;
     z-index:100;
   }
 
@@ -596,12 +596,15 @@ p{
   .dropdown-cont ul.ul-drop-cont li{
     display: block;
     width: auto;
-    border:1px solid white;
+    border:2px solid white;
+    transform-origin: top left;
+    margin-bottom: 1px;
   }
 
-  .dropdown-cont ul.ul-drop-cont li {
-  transform-origin: top left;
-}
+  .dropdown-cont ul.ul-drop-cont li:hover {
+    border : 2px solid rgb(189, 52, 39);
+    color:white;
+  }
 
 .dropdown-cont ul.ul-drop-cont li:nth-child(1) {
   background-color: rgba(0,0,0,.8);
@@ -678,7 +681,7 @@ p{
 
 
   .flex-item-img{
-    width: calc((100% / 3) - 20px));
+    width: calc((100% / 3) - 5px);
     margin-bottom: 20px;
   }
 
