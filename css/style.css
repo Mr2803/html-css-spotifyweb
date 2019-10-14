@@ -58,6 +58,7 @@
 .menu ul{
   list-style-type: none;
   height:25%;
+  min-height: 150px;
 }
 
 .menu .ul_menu li{
