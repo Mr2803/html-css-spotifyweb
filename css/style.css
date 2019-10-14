@@ -93,6 +93,7 @@
 .create-playlist{
   color:grey;
   height:75%;
+  min-height: 200px;
 }
 
 .create-playlist h5{
