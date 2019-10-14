@@ -59,6 +59,7 @@ body{
 
 .menu{
   height:80%;
+  min-height: 550px;
 }
 .menu ul{
   list-style-type: none;
