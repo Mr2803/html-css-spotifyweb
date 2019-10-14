@@ -7,6 +7,10 @@
   font-family: "spotify-circular";
 }
 
+body{
+  overflow: hidden;
+}
+
 .debug{
   border:1px solid white;
 }
@@ -45,6 +49,7 @@
   top:0;
   padding:0 24px;
   z-index: 200;
+  overflow-y: scroll;
 }
 
 .logomobile{
@@ -124,7 +129,6 @@
   overflow-y: scroll;
   height: 65%;
   margin-top: 20px;
-  border: 1px solid grey;
 }
 
  .overflow_ul ul {
@@ -744,6 +748,7 @@ scaletta:
     width: 10%;
     justify-content: flex-start;
     align-items: center;
+    overflow-y: unset;
   }
 
   .logo,
