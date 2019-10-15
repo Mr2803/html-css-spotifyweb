@@ -501,7 +501,6 @@ min-width: calc(100% / 3 )
 .player-second ul li:last-child i{
   position:relative;
   padding-right: 100px;
-  text-align: left;
 }
 
 .circle-volume{
@@ -511,39 +510,51 @@ min-width: calc(100% / 3 )
   border-radius: 50%;
   background: grey;
   top:50%;
-  left:103px;
+  left:70px;
   transform:translate(-50%,-50%);
   z-index: 20;
   display:none;
 }
 
 .player-second ul li:last-child i:active .circle-volume{
-  animation : pallino 8s linear forwards;
+  animation : pallino 3s linear forwards;
   display:inline-block;
 }
 
 @keyframes pallino {
   0%{
-    left:103px;
+    left:70px;
   }
   10%{
-    left:97px;
+    left:63px;
   }
   20%{
-    left:90px;
+    left:56px;
   }
   30%{
-  left:74px;
+  left:49px;
   }
   40%{
-    left:74px;
+    left:42px;
   }
   50%{
-    left:74px;
+    left:35px;
+  }
+  60%{
+    left:28px;
+  }
+  70%{
+    left:21px;
+  }
+  80%{
+    left:14px;
+  }
+  90%{
+    left:7px;
   }
 
   100%{
-    left:74px;
+    left:3px;
   }
 }
 
@@ -551,7 +562,7 @@ min-width: calc(100% / 3 )
   text-align: left;
 }
 
-/* .player-second ul li:last-child i::after{
+.player-second ul li:last-child .grey{
   content:"";
   width: 70px;
   height:3px;
@@ -562,10 +573,22 @@ min-width: calc(100% / 3 )
   top:50%;
   left:70px;
   transform:translate(-50%,-50%);
-} */
+}
+.player-second ul li:last-child .green{
+  content:"";
+  width: 100%;
+  height: 100%;
+  display:inline-block;
+  border-radius: 1px;
+  background:rgb(30, 214, 87);
+  display:none;
+  position:absolute;
+  top:0%;
+}
 
-.player-second ul li:last-child i:active::after{
+.player-second ul li:last-child i:active .green{
   animation : volume 3s linear forwards;
+  display:inline-block;
 }
 
 @keyframes volume {
@@ -574,45 +597,45 @@ min-width: calc(100% / 3 )
 
   }
   10%{
-    width:63px;
+    width:90%;
     background:rgb(30, 214, 87);
   }
   20%{
-    width:56px;
+    width:80%;
     background:rgb(30, 214, 87);
   }
   30%{
-    width:49px;
+    width:70%;
     background:rgb(30, 214, 87);
   }
   40%{
-    width:42px;
+    width:60%;
     background:rgb(30, 214, 87);
   }
   50%{
-    width:35px;
+    width:50%;
     background:rgb(30, 214, 87);
 
   }
   60%{
-    width:28px;
+    width:40%;
     background:rgb(30, 214, 87);
   }
   70%{
-    width:21px;
+    width:30%;
     background:rgb(30, 214, 87);
   }
   80%{
-    width:14px;
+    width:20%;
     background:rgb(30, 214, 87);
   }
   90%{
-    width:7px;
+    width:10%;
     background:rgb(30, 214, 87);
   }
 
   100%{
-    width:7px;
+    width:1%;
     background:rgb(30, 214, 87);
   }
 }
