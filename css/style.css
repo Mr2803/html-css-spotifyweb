@@ -518,7 +518,7 @@ min-width: calc(100% / 3 )
 }
 
 .player-second ul li:last-child i:active .circle-volume{
-  animation : pallino 8s linear;
+  animation : pallino 8s linear forwards;
   display:inline-block;
 }
 
@@ -536,11 +536,12 @@ min-width: calc(100% / 3 )
   left:74px;
   }
   40%{
-    left:67px;
+    left:74px;
   }
   50%{
-    left:96px;
+    left:74px;
   }
+    /*
   60%{
     left:96px;
   }
@@ -552,10 +553,10 @@ min-width: calc(100% / 3 )
   }
   90%{
     left:96px;
-  }
+  } */
 
   100%{
-    left:96px;
+    left:74px;
   }
 }
 
@@ -577,7 +578,7 @@ min-width: calc(100% / 3 )
 }
 
 .player-second ul li:last-child i:active::after{
-  animation : volume 3s linear;
+  animation : volume 3s linear forwards;
 }
 
 @keyframes volume {
@@ -624,7 +625,7 @@ min-width: calc(100% / 3 )
 
   100%{
     width:7px;
-    background:grey;
+    background:rgb(30, 214, 87);
   }
 }
 
