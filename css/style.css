@@ -429,6 +429,8 @@ min-width: calc(100% / 3 )
     animation: sound 0ms -800ms linear infinite alternate;
 }
 
+
+
 @keyframes sound {
     0% {
        opacity: .35;

@@ -1,9 +1,3 @@
-document.getElementById('name-song').innerHTML = "Bohemian Rhapsody"
-
-document.getElementById('name-group').innerHTML = "Queen"
-
-
-
 function link1(){
   document.getElementById('first-line').style.visibility = "visible";
   document.getElementById('second-line').style.visibility = "hidden";
@@ -55,9 +49,13 @@ function link6(){
 }
 
 
+document.getElementById('name-song').innerHTML = "Bohemian Rhapsody"
+
+document.getElementById('name-group').innerHTML = "Queen"
+
 function play(){
-  document.getElementById('bars').style.opacity = "1";
+  document.getElementById('bars').style.visibility = "visible";
 }
 function stop(){
-  document.getElementById('bars').style.opacity = "0";
+  document.getElementById('bars').style.visibility = "hidden";
 }
