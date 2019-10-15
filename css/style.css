@@ -541,19 +541,6 @@ min-width: calc(100% / 3 )
   50%{
     left:74px;
   }
-    /*
-  60%{
-    left:96px;
-  }
-  70%{
-  left:96px;
-  }
-  80%{
-    left:96px;
-  }
-  90%{
-    left:96px;
-  } */
 
   100%{
     left:74px;
@@ -564,7 +551,7 @@ min-width: calc(100% / 3 )
   text-align: left;
 }
 
-.player-second ul li:last-child i::after{
+/* .player-second ul li:last-child i::after{
   content:"";
   width: 70px;
   height:3px;
@@ -575,7 +562,7 @@ min-width: calc(100% / 3 )
   top:50%;
   left:70px;
   transform:translate(-50%,-50%);
-}
+} */
 
 .player-second ul li:last-child i:active::after{
   animation : volume 3s linear forwards;
@@ -583,8 +570,8 @@ min-width: calc(100% / 3 )
 
 @keyframes volume {
   0%{
-    width:70px;
     background:rgb(30, 214, 87);
+
   }
   10%{
     width:63px;
@@ -605,6 +592,7 @@ min-width: calc(100% / 3 )
   50%{
     width:35px;
     background:rgb(30, 214, 87);
+
   }
   60%{
     width:28px;
