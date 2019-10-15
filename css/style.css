@@ -230,9 +230,9 @@ body{
   visibility: hidden;
 }
 
-.top-nav-orizzontale ul li a:hover .line{
+/* .top-nav-orizzontale ul li a:hover .line{
   visibility: visible;
-}
+} */
 
 .navbar-oriz-drop{
   display:none;
